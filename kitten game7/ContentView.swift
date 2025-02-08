@@ -19,7 +19,7 @@ struct ContentView: View {
         
         ZStack{
             Spacer()
-            
+            //Added color background and  change the size
             Image("background-plain")
                 .resizable()
                 .ignoresSafeArea()
@@ -38,11 +38,11 @@ struct ContentView: View {
                 Spacer()
                 
                 HStack{
-                  
+                  // You can pick also different cards to continue
                     Image("card11")
                         .resizable()
                         .frame( height:150)
-                    
+                  // Changed the frame of the image.
                     Spacer()
                     Image("card12")
                         .resizable()
@@ -53,6 +53,7 @@ struct ContentView: View {
                 }
                 Spacer()
                 
+                // Added the deal function to response the user
                   Button {
                       deal()
                   }label:{
@@ -66,6 +67,7 @@ struct ContentView: View {
             }
             HStack{
               
+                // Two users, the player and CPU
                 VStack{
                     
                     Spacer()
@@ -91,6 +93,7 @@ struct ContentView: View {
         }
        
         }
+    // Deal button
     func deal(){
         print("Deal Cards")    }
 }
