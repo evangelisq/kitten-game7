@@ -19,17 +19,22 @@ struct ContentView: View {
         
         ZStack{
             Spacer()
+            
             Image("background-plain")
                 .resizable()
                 .ignoresSafeArea()
+            
             Spacer()
             
+            // Added nm spacer...
             VStack{
                 Spacer()
+                
                 Image("logo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 90, height: 90)
+                
                 Spacer()
                 
                 HStack{
@@ -37,10 +42,12 @@ struct ContentView: View {
                     Image("card11")
                         .resizable()
                         .frame( height:150)
+                    
                     Spacer()
                     Image("card12")
                         .resizable()
                         .frame(height:150)
+                    
                     Spacer()
                   
                 }
@@ -60,6 +67,7 @@ struct ContentView: View {
             HStack{
               
                 VStack{
+                    
                     Spacer()
                     Text("Player")
                         .font(.headline)
@@ -69,6 +77,7 @@ struct ContentView: View {
                     
                 }
                 VStack{
+                    
                     Spacer()
                     Text("CPU")
                         .font(.headline)
